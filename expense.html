@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expenses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="enter-expense-div">
+        <h1 id="expense-details-heading">Enter expense details:</h1>
+        <div class="grouping-div">
+            <select name="property-select" id="property-select">
+                <option value="almond">Almond St</option>
+                <option value="germania">Germania St</option>
+                <option value="westFourth">West Fourth St</option>
+                <option value="hepburn">Hepburn St</option>
+                <option value="memorial">Memorial Ave</option>
+                <option value="hughes">Hughes St</option>
+                <option value="poplar">Poplar St</option>
+                <option value="sullivan">Sullivan St</option>
+                <option value="lycoming">Lycoming St</option>
+                <option value="clayton326">326 Clayton Ave</option>
+                <option value="clayton328">328 Clayton Ave</option>
+                <option value="garden">Garden St</option>
+                <option value="ralston">Ralston</option>
+            </select>    
+            <select name="category-select" id="category-select">
+                <option value="advertising">Advertising</option>
+                <option value="auto">Auto and travel</option>
+                <option value="cleaning">Cleaning and maintenance</option>
+                <option value="commissions">Commissions</option>
+                <option value="insurance">Insurance</option>
+                <option value="legal">Legal and professional fees</option>
+                <option value="management">Management fees</option>
+                <option value="mortgage">Mortgage interest paid to banks, etc</option>
+                <option value="interest">Other interest</option>
+                <option value="repairs">Repairs</option>
+                <option value="supplies">Supplies</option>
+                <option value="taxes">Taxes</option>
+                <option value="utilities">Utilities</option>
+                <option value="depreciation">Depreciation expense or depletion</option>
+                <option value="phone">Cell Phone</option>
+            </select>
+        </div>
+        <hr>
+        <div class="align-div">
+            <label for="reason-input">Reason:</label>
+            <input type="text" id="reason-input" placeholder="E.g. toilet repair"></input>
+        </div>
+        <div class="align-div">
+            <label for="price-input">Price:</label>
+            <input type="number" id="price-input" placeholder="$">
+        </div>
+        <div class="align-div">
+            <label for="date-input">Date:</label>
+            <input type="date" id="date-input">
+        </div>
+        <hr>
+        <button id="submit-expense-btn">Submit</button>
+        <hr>
+        <div class="controls-div">
+            <h1 id="controls-heading">Controls</h1>
+            <div class="data-btn-div">
+                <button id="rent-btn">Rent</button>
+                <button id="print-btn">Print</button>
+            </div>
+            <div class="data-btn-div">
+                <button id="backup-btn">Backup Data</button>
+                <button id="restore-btn">Restore Data</button>
+            </div>
+        </div>
+    </div>
+    <div id="expenses-div"></div>
+    <input type="file" name="backup" id="backup-file">
+    <script src="expense.js"></script>
+</body>
+</html>

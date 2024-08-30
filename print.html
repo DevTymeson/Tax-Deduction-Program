@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="print-body">
+    <div class="no-print" id="print-btn-div">
+        <button class="no-print" id="back-btn">Back</button>
+        <button class="no-print" id="print-btn">Print</button>
+    </div>
+    <div id="final-property-heading-div">
+        <h1 id="final-property-heading"></h1>
+    </div>
+    <div id="totaled-expenses-div">
+        <div class="final-expenses-div print" id="final-advertising-div">
+            <h1 id="final-advertising-heading">Advertising</h1>
+            <p class="final-expenses-paragraph" id="final-advertising-paragraph">0</p>
+        </div>
+        <div class="final-expenses-div print" id="final-auto-div">
+            <h1 id="final-auto-heading">Auto and Travel</h1>
+            <p class="final-expenses-paragraph" id="final-auto-paragraph">0</p>
+        </div>
+        <div class="final-expenses-div print" id="final-cleaning-div">
+            <h1 id="final-cleaning-heading">Cleaning and Maintenance</h1>
+            <p class="final-expenses-paragraph" id="final-cleaning-paragraph">0</p>
+        </div>
+        <div class="final-expenses-div print" id="final-commissions-div">
+            <h1 id="final-commissions-heading">Commissions</h1>
+            <p class="final-expenses-paragraph" id="final-commissions-paragraph">0</p>
+        </div>
+        <div class="final-expenses-div print" id="final-insurance-div">
+            <h1 id="final-insurance-heading">Insurance</h1>
+            <p class="final-expenses-paragraph" id="final-insurance-paragraph">0</p>
+        </div>
+        <div class="final-expenses-div print" id="final-legal-div">
+            <h1 id="final-legal-heading">Legal and Professional Fees</h1>
+            <p class="final-expenses-paragraph" id="final-legal-paragraph">0</p>
+        </div>
+        <div class="final-expenses-div print" id="final-management-div">
+            <h1 id="final-management-heading">Management Fees</h1>
+            <p class="final-expenses-paragraph" id="final-management-paragraph">0</p>
+        </div>
+        <div class="final-expenses-div print" id="final-mortgage-div">
+            <h1 id="final-mortgage-heading">Mortgage Interest Paid to Banks, etc.</h1>
+            <p class="final-expenses-paragraph" id="final-mortgage-paragraph">0</p>
+        </div>
+        <div class="final-expenses-div print" id="final-interest-div">
+            <h1 id="final-interest-heading">Other Interest</h1>
+            <p class="final-expenses-paragraph" id="final-interest-paragraph">0</p>
+        </div>
+        <div class="final-expenses-div print" id="final-repairs-div">
+            <h1 id="final-repiars-heading">Repairs</h1>
+            <p class="final-expenses-paragraph" id="final-repairs-paragraph">0</p>
+        </div>
+        <div class="final-expenses-div print" id="final-supplies-div">
+            <h1 id="final-supplies-heading">Supplies</h1>
+            <p class="final-expenses-paragraph" id="final-supplies-paragraph">0</p>
+        </div>
+        <div class="final-expenses-div print" id="final-taxes-div">
+            <h1 id="final-taxes-heading">Taxes</h1>
+            <p class="final-expenses-paragraph" id="final-taxes-paragraph">0</p>
+        </div>
+        <div class="final-expenses-div print" id="final-utilities-div">
+            <h1 id="final-utilities-heading">Utilities</h1>
+            <p class="final-expenses-paragraph" id="final-utilities-paragraph">0</p>
+        </div>
+        <div class="final-expenses-div print" id="final-depreciation-div">
+            <h1 id="final-depreciation-heading">Depreciation Expense or Depletion</h1>
+            <p class="final-expenses-paragraph" id="final-depreciation-paragraph">0</p>
+        </div>
+        <div class="final-expenses-div print" id="final-phone-div">
+            <h1 id="final-phone-heading">Cell Phone</h1>
+            <p class="final-expenses-paragraph" id="final-phone-paragraph">0</p>
+        </div>
+        <div class="final-expenses-div print" id="final-total-expenses-div">
+            <h1 id="final-total-expenses-heading">Total:    </h1>
+            <p class="final-expenses-paragraph" id="final-total-expenses-paragraph"></p>
+        </div>
+    </div>
+    <hr class="no-print">
+    <div id="totaled-rent-div" class="page-break">
+        <div class="final-rent-div" id="final-january-div">
+            <h1 class="final-rent-heading" id="final-january-heading">January</h1>
+            <p class="final-rent-paragraph" id="final-january-paragraph"></p>
+        </div>
+        <div class="final-rent-div" id="final-february-div">
+            <h1 class="final-rent-heading" id="final-february-heading">February</h1>
+            <p class="final-rent-paragraph" id="final-february-paragraph"></p>
+        </div>
+        <div class="final-rent-div" id="final-march-div">
+            <h1 class="final-rent-heading" id="final-march-heading">March</h1>
+            <p class="final-rent-paragraph" id="final-march-paragraph"></p>
+        </div>
+        <div class="final-rent-div" id="final-april-div">
+            <h1 class="final-rent-heading" id="final-april-heading">April</h1>
+            <p class="final-rent-paragraph" id="final-april-paragraph"></p>
+        </div>
+        <div class="final-rent-div" id="final-may-div">
+            <h1 class="final-rent-heading" id="final-may-heading">May</h1>
+            <p class="final-rent-paragraph" id="final-may-paragraph"></p>
+        </div>
+        <div class="final-rent-div" id="final-june-div">
+            <h1 class="final-rent-heading" id="final-june-heading">June</h1>
+            <p class="final-rent-paragraph" id="final-june-paragraph"></p>
+        </div>
+        <div class="final-rent-div" id="final-july-div">
+            <h1 class="final-rent-heading" id="final-july-heading">July</h1>
+            <p class="final-rent-paragraph" id="final-july-paragraph"></p>
+        </div>
+        <div class="final-rent-div" id="final-august-div">
+            <h1 class="final-rent-heading" id="final-august-heading">August</h1>
+            <p class="final-rent-paragraph" id="final-august-paragraph"></p>
+        </div>
+        <div class="final-rent-div" id="final-september-div">
+            <h1 class="final-rent-heading" id="final-september-heading">September</h1>
+            <p class="final-rent-paragraph" id="final-september-paragraph"></p>
+        </div>
+        <div class="final-rent-div" id="final-october-div">
+            <h1 class="final-rent-heading" id="final-october-heading">October</h1>
+            <p class="final-rent-paragraph" id="final-october-paragraph"></p>
+        </div>
+        <div class="final-rent-div" id="final-november-div">
+            <h1 class="final-rent-heading" id="final-november-heading">November</h1>
+            <p class="final-rent-paragraph" id="final-november-paragraph"></p>
+        </div>
+        <div class="final-rent-div" id="final-december-div">
+            <h1 class="final-rent-heading" id="final-december-heading">December</h1>
+            <p class="final-rent-paragraph" id="final-december-paragraph"></p>
+        </div>
+        <div class="final-total-div" id="final-total-div">
+            <h1 class="final-rent-heading" id="final-total-heading">Total:</h1>
+            <p class="final-rent-paragraph" id="final-total-paragraph"></p>
+        </div>
+    </div>
+    <hr class="no-print">
+    <div id="categorized-expenses-div" class="page-break">
+        <div class="all-expenses-div print" id="all-advertising-div">
+            <h1 id="all-advertising-heading">Advertising</h1>
+        </div>
+        <div class="all-expenses-div print page-break" id="all-auto-div">
+            <h1 id="all-auto-heading">Auto and Travel</h1>
+        </div>
+        <div class="all-expenses-div print page-break" id="all-cleaning-div">
+            <h1 id="all-cleaning-heading">Cleaning and Maintenance</h1>
+        </div>
+        <div class="all-expenses-div print page-break" id="all-commissions-div">
+            <h1 id="all-commissions-heading">Commissions</h1>
+        </div>
+        <div class="all-expenses-div print page-break" id="all-insurance-div">
+            <h1 id="all-insurance-heading">Insurance</h1>
+        </div>
+        <div class="all-expenses-div print page-break" id="all-legal-div">
+            <h1 id="all-legal-heading">Legal and Professional Fees</h1>
+        </div>
+        <div class="all-expenses-div print page-break" id="all-management-div">
+            <h1 id="all-management-heading">Management Fees</h1>
+        </div>
+        <div class="all-expenses-div print page-break" id="all-mortgage-div">
+            <h1 id="all-mortgage-heading">Mortgage Interest Paid to Banks, etc.</h1>
+        </div>
+        <div class="all-expenses-div print page-break" id="all-interest-div">
+            <h1 id="all-interest-heading">Other Interest</h1>
+        </div>
+        <div class="all-expenses-div print page-break" id="all-repairs-div">
+            <h1 id="all-repiars-heading">Repairs</h1>
+        </div>
+        <div class="all-expenses-div print page-break" id="all-supplies-div">
+            <h1 id="all-supplies-heading">Supplies</h1>
+        </div>
+        <div class="all-expenses-div print page-break" id="all-taxes-div">
+            <h1 id="all-taxes-heading">Taxes</h1>
+        </div>
+        <div class="all-expenses-div print page-break" id="all-utilities-div">
+            <h1 id="all-utilities-heading">Utilities</h1>
+        </div>
+        <div class="all-expenses-div print page-break" id="all-depreciation-div">
+            <h1 id="all-depreciation-heading">Depreciation Expense or Depletion</h1>
+        </div>
+        <div class="all-expenses-div print page-break" id="all-phone-div">
+            <h1 id="all-phone-heading">Cell Phone</h1>
+        </div>
+    </div>
+    <script src="print.js"></script>
+</body>
+</html>

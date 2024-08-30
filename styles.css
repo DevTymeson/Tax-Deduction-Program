@@ -1,0 +1,314 @@
+:root {
+    --primary: #0B132B;
+    --secondary: #1C2541;
+    --tertiary: #3A506B;
+    --dark-text: #D3D3D3;
+    --light-text: #FFFFFF;
+}
+
+/* Elements */
+
+* {
+    font-size: 2vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 4px;
+    min-width: fit-content;
+    min-height: fit-content;
+}
+
+body {
+    margin: 0;
+    background-color: var(--secondary);
+    height: 100vh;
+    max-width: 100vw;
+    color: var(--light-text);
+    display: flex;
+    overflow-x: hidden;
+}
+
+input {
+    box-sizing: border-box;
+    min-width: 70%;
+}
+
+input, select {
+    background: var(--secondary);
+    border: none;
+    color: var(--dark-text);
+}
+
+hr {
+    width: 100%;
+    margin: 2vh;
+}
+
+button {
+    min-width: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button:hover {
+    filter: brightness(125%);
+}
+
+/* Classes */
+
+.grouping-div {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+}
+
+.grouping-div select {
+    margin-bottom: 3vh;
+}
+
+.align-div {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5vh;
+}
+
+.controls-div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.data-btn-div {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: fit-content;
+}
+
+.loaded-expense-div {
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 2vh;
+    box-sizing: border-box;
+    min-height: fit-content;
+    max-height: 30vh;
+    height: auto;
+    margin: 1vh;
+}
+
+.button-div {
+    display: none;
+}
+
+.month-div input {
+    width: 100%;
+}
+
+.month-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.month-div * {
+    margin-bottom: 0.5vh;
+}
+
+.hidden {
+    display: none;
+}
+
+.month-rent-input {
+    background-color: var(--tertiary);
+}
+
+.final-rent-div,
+.final-total-div,
+.final-expenses-div {
+    display: flex;
+    align-items: center;
+    width: 90vw;
+    box-sizing: border-box;
+}
+
+.final-rent-div *,
+.final-total-div * {
+    vertical-align: center;
+    text-align: center;
+    line-height: normal;
+    height: 100%;
+    width: fit-content;
+    height: fit-content;
+}
+
+.final-loaded-expense-div {
+    margin-left: 5vw;
+    font-size: 1.9vh;
+}
+
+.all-expenses-div h1 {
+    text-decoration: underline;
+}
+
+/* ID */
+
+#enter-expense-div {
+    position: fixed;
+    height: 100vh;
+    max-width: 32vw;
+    min-width: 32vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 3px solid var(--dark-text);
+    padding: 1vw;
+    background-color: var(--primary);
+    color: var(--dark-text);
+    border-radius: 0;
+}
+
+#expenses-div {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 68vw;
+    max-width: 68vw;
+    min-height: 100vh;
+    height: fit-content;
+    margin-left: 32vw;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    padding: 3vh 0;
+}
+
+#expense-details-heading {
+    margin-bottom: 3vh;
+}
+
+#submit-expense-btn {
+    background-color: var(--secondary);
+    border: none;
+    color: var(--dark-text);
+    margin-bottom: 30vh;
+}
+
+#rent-btn, 
+#backup-btn, 
+#restore-btn,
+#print-btn,
+#back-btn {
+    width: 5vw;
+    height: 5vh;
+    min-width: 175px;
+    background-color: var(--tertiary);
+    border: none;
+    color: var(--dark-text);
+    margin-bottom: 2vh;
+}
+
+#expenses-heading {
+    font-size: 4vh;
+    text-align: center;
+    width: 100%;
+}
+
+#rent-btn {
+    margin-bottom: 2vh;
+}
+
+#controls-heading {
+    margin-bottom: 3vh;
+}
+
+#backup-file {
+    display: none;
+}
+
+#rent-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+#back-to-expense-btn, 
+#save-rent-btn {
+    max-width: 100px;
+}
+
+#rent-div {
+    display: flex;
+    justify-content: center;
+}
+
+#first-half-div,
+#second-half-div {
+    max-width: 500px;
+    margin: 1vh;
+}
+
+#rent-btn-div {
+    padding: 1vh;
+}
+
+#print-body {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+}
+
+#print-body > div {
+    min-height: fit-content;
+    height: fit-content;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#print-body p {
+    margin-left: 2vw;
+}
+
+#print-btn-div {
+    width: 97vw;
+    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+}
+
+#print-btn-div #back-btn {
+    margin-right: 10vw;
+}
+
+#final-property-heading-div * {
+    margin: auto;
+    font-size: 2.25vh;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+@media print {
+    * {
+        color: black;
+        background-color: white;
+        font-size: 17px !important;
+    }
+
+    .no-print {
+        display: none;
+    }
+
+    .page-break {
+        page-break-before: always !important;
+    }
+}
